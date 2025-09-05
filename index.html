@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+
+        <div class="todo-form-container">
+            <form id="todoForm" class="todo-form">
+                <div class="input-group">
+                    <input type="text" id="todoInput" placeholder="What needs to be done?" required>
+                    <input type="date" id="dateInput" required>
+                    <button type="submit" class="add-btn">
+                        <span>+</span> Add Task
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="filter-container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Tasks</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <div class="stats">
+                <span id="taskCount">0 tasks remaining</span>
+            </div>
+        </div>
+
+        <div class="todo-list-container">
+            <ul id="todoList" class="todo-list">
+            </ul>
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">📝</div>
+                <h3>No tasks yet</h3>
+                <p>Add your first task to get started!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
